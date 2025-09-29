@@ -11,8 +11,7 @@ CREATE TABLE `libros`(
     `fecha_estreno` DATE NOT NULL,
     `isbn` BIGINT NOT NULL,
     `precio` INT NOT NULL,
-    `cantidad` INT NOT NULL,
-    `id_busqueda` BIGINT NOT NULL
+    `cantidad` INT NOT NULL
 );
 ALTER TABLE
     `libros` ADD UNIQUE `libros_isbn_unique`(`isbn`);
