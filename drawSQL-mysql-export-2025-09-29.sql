@@ -29,6 +29,8 @@ CREATE TABLE `clientes`(
     `telefono` VARCHAR(10) NOT NULL,
     `direccion` VARCHAR(100) NOT NULL
 );
+ALTER TABLE
+    `clientes` ADD UNIQUE `clientes_correo_unique`(`correo`);
 CREATE TABLE `pedidos`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `id_cliente_fk` BIGINT NOT NULL,
